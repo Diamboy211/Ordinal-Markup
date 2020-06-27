@@ -563,7 +563,7 @@ function render() {
     : "none";
   get("ordinalPointsDisplay").innerHTML =
     `You have ${beautify(game.OP)} Ordinal Points`;
-  get("succAutoAmount").innerHTML =
+  /* get("succAutoAmount").innerHTML =
     `You have ${logbeautify(game.succAuto)} successor autoclickers, clicking the successor button ${(game.succAuto > 1e265
       ? logbeautify(game.succAuto)
       : beautify(game.succAuto * totalMult * succAutoMult))} times per second`;
@@ -586,7 +586,7 @@ function render() {
         ? "Infinity"
         : "1.000e6"
       : beautify(Math.min(10 ** 260 + game.limAuto, 100 * 2 ** game.limAuto))) +
-    "  OP";
+    "  OP";*/
   get("factorShift").innerHTML =
     "Factor Shift (" +
     game.factorShifts +
@@ -599,7 +599,7 @@ function render() {
         : "Graham's number (g<sub>ψ(Ω<sup>Ω</sup>ω)</sub> (10))"
       : beautify(factorShiftCosts[game.factorShifts])) +
     " OP";
-  get("noFactors").style.display =
+  /*get("noFactors").style.display =
     game.factors.length == 0 ? "inline-block" : "none";
   get("factorList").style.display =
     game.factors.length == 0 ? "none" : "inline-block";
@@ -620,7 +620,7 @@ function render() {
     }
   }
   get("factorMult").textContent =
-    "Your factors are multiplying Tier 1 Automation by " + beautify(factorMult);
+    "Your factors are multiplying Tier 1 Automation by " + beautify(factorMult);*/
   get("boostersText").textContent = "You have " + beautify(game.boosters) + " boosters";
   get("refundBoosters").textContent =
     "Refund back " +
