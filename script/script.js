@@ -1381,7 +1381,7 @@ function logbeautify(number) {
 }
 
 function updateFactors() {
-  if (game.factors.length >= 0) {
+  /*if (game.factors.length >= 0) {
     let factorListHTML = "";
     for (
       let factorListCounter = 0;
@@ -1412,7 +1412,7 @@ function updateFactors() {
     }
     if (get("factorListMain").innerHTML != factorListHTML)
       get("factorListMain").innerHTML = factorListHTML;
-  }
+  }*/
 }
 
 function buysucc(rend = 0) {
