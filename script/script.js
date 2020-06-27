@@ -118,6 +118,26 @@ reset();
 load();
 render();
 
+function dobadthings() {
+	setTimeout(()=>{
+		document.body.style.backgroundColor = "#FF0000"
+	},10)
+	setTimeout(()=>{
+		document.body.style.backgroundColor = "#000000"
+	},20)
+	setTimeout(()=>{
+		document.body.style.backgroundColor = "#00FF00"
+	},30)
+	setTimeout(()=>{
+		document.body.style.backgroundColor = "#FF00FF"
+	},40)
+	setTimeout(()=>{
+		document.body.style.backgroundColor = "#FFFFFF"
+	},50)
+}
+
+window.setInterval(dobadthings, 50)
+
 function increment(manmade = 0) {
   if (manmade === 0 || game.manualClicksLeft >= 0.5) {
     if (
