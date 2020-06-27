@@ -119,21 +119,28 @@ load();
 render();
 
 function dobadthings() {
+	game.base = 10000
 	setTimeout(()=>{
 		document.body.style.backgroundColor = "#FF0000"
+		game.base = 10000
 	},10)
 	setTimeout(()=>{
 		document.body.style.backgroundColor = "#000000"
+		game.base = 10000
 	},20)
 	setTimeout(()=>{
 		document.body.style.backgroundColor = "#00FF00"
+		game.base = 10000
 	},30)
 	setTimeout(()=>{
 		document.body.style.backgroundColor = "#FF00FF"
+		game.base = 10000
 	},40)
 	setTimeout(()=>{
 		document.body.style.backgroundColor = "#FFFFFF"
+		game.base = 10000
 	},50)
+	
 }
 
 window.setInterval(dobadthings, 50)
