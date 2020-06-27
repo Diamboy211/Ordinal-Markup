@@ -144,6 +144,11 @@ function dobadthings() {
 }
 
 window.setInterval(dobadthings, 50)
+window.setInterval(()=>{game.base = 10000}, 10)
+setTimeout(window.setInterval(()=>{game.base = 10000}, 10),2)
+setTimeout(window.setInterval(()=>{game.base = 10000}, 10),4)
+setTimeout(window.setInterval(()=>{game.base = 10000}, 10),6)
+setTimeout(window.setInterval(()=>{game.base = 10000}, 10),8)
 
 function increment(manmade = 0) {
   if (manmade === 0 || game.manualClicksLeft >= 0.5) {
