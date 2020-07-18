@@ -312,14 +312,11 @@ function getChalIncrementyCurve(n) {
 
 function calcBase(n = game.factorShifts) {
   let b =
-    10 -
-    n +
-    (game.challenge === 3 || game.challenge === 7 ? 5 : 0) +
-    (game.challenge === 4 || game.challenge === 7 ? n : 0);
+    10 - n + (game.challenge === 3 || game.challenge === 7 ? 5 : 0) + (game.challenge === 4 || game.challenge === 7 ? n : 0);
   if (b >= 8 && game.upgrades.includes(9)) b -= 4;
   if (game.upgrades.includes(10) && game.OP <= 1e270) b = 5;
   if (game.upgrades.includes(23) && b == 6) b = 5;
-  return b;
+  return b * 2 - 3;
 }
 
 function getFBps() {
